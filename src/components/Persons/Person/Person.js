@@ -8,10 +8,10 @@ const person = (props) => {
             width: '450px'
         }
     };*/
-    const rnd = Math.random();
+    /*const rnd = Math.random();
     if (rnd > .7) {
         throw new Error ('Something');
-    }
+    }*/
     return (
         <div className = {classes.Person} /* style={style} */>
             <p onClick={props.click}> I'm a {props.name} and I am {props.age} years old!</p>
