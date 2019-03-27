@@ -8,8 +8,12 @@ const person = (props) => {
             width: '450px'
         }
     };*/
+    const rnd = Math.random();
+    if (rnd > .7) {
+        throw new Error ('Something');
+    }
     return (
-        <div className = {classes.person} /* style={style} */>
+        <div className = {classes.Person} /* style={style} */>
             <p onClick={props.click}> I'm a {props.name} and I am {props.age} years old!</p>
             <p>{props.children}</p>
             <input type='text' onChange = {props.changed} value={props.name}/>
@@ -17,4 +21,4 @@ const person = (props) => {
     )
 }
 
-export default person //Radium(person);
+export default person; //Radium(person);

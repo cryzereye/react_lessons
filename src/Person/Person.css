@@ -1,12 +1,12 @@
-.person {
+.Person {
     border: 1px solid gray;
     margin: 10px auto;
     padding: 10px;
     display: -moz-box;
 }
 
-/*@media (min-width: 500px){
+@media (min-width: 500px){
     .Person {
         width: 450px;
     }
-}*/
+}
